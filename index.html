@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    
+    
+
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/dogica" type="text/css"/>
+   
+    <link href="icon.png" rel="icon">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+    <title>Operator Image slider</title>
+</head>
+
+<body>
+     <div id = "confirm">
+         <div class = "message">The folder has to be inside the Characters folder in the installation folder also the images has to be numbered from 1 - 10000 for exemple 1.jpg</div>
+         <button class = "yes">Ok I will</button>
+      </div>
+
+   </body>
+    <div id = 'Wraper'>
+        <div style="display : block;"  id="Wraper2">
+    <div class = "top_bar" >
+        <div class="Main"> 
+            <div class="Main-2"> <input class = "input" placeholder="Speed" id="input" type="text">
+                <button id = "play_button" class= "button" onclick="play()" class="play">Play</button></div>
+                
+            <h1 id="CharacterName">Add Images!</h1>
+          <img id = 'Logo' src="icon.png" alt="">
+            <h1>ImageSlider</h1>
+    <input id="myInput" type="file" webkitdirectory directory multiple>
+    
+        </div>
+        
+    <div class="button_container"> 
+        <audio id="myAudio" src="Music/DSF.mp3" preload="auto">
+        </audio>
+        <audio id="myAudio1" src="Music/HCF.mp3" preload="auto">
+        </audio>
+        <audio id="myAudio2" src="Music/NFDSLOW.mp3" preload="auto">
+        </audio>
+        <input id = 'Width' placeholder= "Width" type="text">
+       
+        <button style="background-color: rgb(16, 24, 16);" class = "button" type="button" onclick="BackChar()"><</button>
+        <input type="range" min="0" max="100" value="50" class="slider" id="range">
+        <button id="button1" class = "button" type="button" onclick="togglePlay()"> Soundtrack 1 -- play</button>
+        <button id="button2" class = "button" type="button" onclick="togglePlay1()">Soundtrack 2 -- play</button>
+        <button id="button3" class = "button" type="button" onclick="togglePlay2()">Soundtrack 3 -- play</button>
+        <button style="background-color: rgb(16, 24, 16);" class = "button" type="button" onclick="NextChar()">></button>
+
+        <input id = 'Height' placeholder = "Height" type="text">
+    </div>
+
+    </div>
+</div>
+
+<button class = "hide" type="button" onclick=
+
+
+'if(document.getElementById("Wraper2").style.display == "block")
+{
+    document.getElementById("Wraper2").style.display = "none";
+}
+
+else
+{
+    document.getElementById("Wraper2").style.display = "block";
+}'
+
+
+>Hide </button> 
+</div>
+
+<script src="slider.js"></script>
+</body>
+</html>
